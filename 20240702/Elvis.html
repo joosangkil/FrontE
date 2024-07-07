@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자기소개</title>
+
+    <style>
+        body{
+            background-color: linen;
+            color: green;
+            margin-left: 8%;
+            margin-right: 8%;
+        }
+        h3{
+            text-align: center;
+            color: orange;
+        }
+        hr{
+            background-color: grey;
+            border: solid gray;
+            height: 5px;
+        }
+        span{
+            color: blue;
+            font-size: 20px;
+        }
+    </style>
+    <script>
+        function show(){//img에 이미지 달기
+            document.getElementById("fig").src="../20240701/images/pEgg.jpeg";
+        }
+        function hide(){//img에 이미지 제거
+            document.getElementById("fig").src="";
+        }
+    </script>
+</head>
+<body>
+    <h3 onmouseover="show()" onmouseout="hide()">Sangkil Joo</h3>
+    <hr>
+    <div><img id="fig" src=""></div>
+
+    <span>Sangkil Joo</span> (May 20, 1982), also known mononymously as Joo, was an Korean Developer and ceo. <br>
+    Sangkil was born in <span>Ik-san</span> relocated to Seoul and Paju
+
+    <div style="background-color: brown; padding: 20px;">
+        FIRE!!<br>
+        <span style="color: yellow;"> temzro </span><br>
+        SPACE!!
+    </div>
+
+    <br>
+    <br>
+    <p>
+        <video src="../20240702/video/did.mp4"controls type="video/mp4" autoplay loop poster="images/Google.png"></video>
+    </p>
+</body>
+</html>

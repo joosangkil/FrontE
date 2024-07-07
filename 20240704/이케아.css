@@ -1,0 +1,50 @@
+header {
+    width: 650px;
+    border: 1px solid;
+}
+aside {
+    position: relative;
+}
+main {
+    width: 650px;
+    height: 300px;
+    border: 1px solid;
+    }
+table {
+    border: 3px solid red;
+}
+
+.btnTop {
+    display: flex;
+    justify-content: left;
+    position:relative;
+    top: -100px;
+    padding-left: 9px;
+
+    background-color: black;
+    color: rgb(255, 255, 255);
+    width: 27px;
+    height: 35px;
+    border: 2px solid;
+    border-radius: 35px;
+    font-size: 32px;
+}
+.btnTop:hover{
+    display:flex;
+    justify-content: left;
+    position: relative;
+    top: -100px;
+    padding-left: 9px;
+
+    width: 120px;
+    height: 35px;
+    cursor: pointer;
+}
+.totop{
+    z-index: 3;
+    font-size:50%;
+    display: flex;
+    position: relative;
+    top: -30px;
+    left: 26px;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <style>
+        h3 {
+            color: red;
+            text-align: center;
+        }
+
+        .smallText {
+            font-size: 10px;
+        }
+
+        .container {
+            width: 600px;
+            margin: 0 auto;
+        }
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+
+        .center2 {
+            display: block;
+            margin-left: -30px;
+            margin-right: auto;
+            width: 98.5%;
+        }
+
+        img {
+            width: 200px;
+        }
+
+        .BlackBack {
+            background-color: black;
+            color: white;
+        }
+        
+    </style>
+    <!-- 외부파일링크 연결 -->
+    <!-- <link rel="stylesheet" href=""> -->
+</head>
+
+<body>
+    <div class="center">
+        <img src="../20240703/images/fruit.jpeg" alt="" class="center">
+        <img src="../20240703/images/apple.jpeg" alt="" class="center2">
+        <fieldset class="BlackBack">
+            <span class="smallText">확인사항</span>
+        </fieldset>
+
+        <table border="3" class="container">
+            <tr>
+                <td class="smallText">확인사항</td>
+            </tr>
+        </table>
+
+
+        <fieldset>
+            <h3>주문 및 배송</h3>
+            <form>
+                <p>
+                    <span>오전 2시 이전</span> 주문은 당일 발송
+                    2시 이후 주문건은 다음날 발송
+                </p>
+            </form>
+        </fieldset>
+        <fieldset>
+            <h3>고객센터</h3>
+            0000-0000
+            <form class="smallText">
+                상담시간 : 오전9시 ~ 오후6시(토/일, 공휴일 휴무)
+            </form>
+        </fieldset>
+    </div>
+</body>
+
+</html>

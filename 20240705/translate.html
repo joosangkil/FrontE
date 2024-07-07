@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>246쪽 변환</title>
+    <style>
+        section {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .origin {
+            border: 1px solid;
+            width: 100px;
+        }
+        .originScale {
+            border: 1px solid;
+            width: 100px;
+        }
+        .originRotate{
+            border: 1px solid;
+            width: 100px;
+        }
+        .origin3Rotate{
+            border: 1px solid;
+            width: 100px;
+        }
+        
+
+        .moveX:hover {
+            transform: translateX(50px);
+        }
+
+        .moveY:hover {
+            transform: translateY(50px);
+        }
+
+        .moveXY:hover {
+            transform: translate(50px, 20px);
+        }
+
+        .scaleX:hover {
+            transform: scaleX(200%);
+        }
+
+        .scaleY:hover {
+            transform: scaleY(200%);
+        }
+
+        .scaleXY:hover {
+            transform: scale(200%);
+        }
+        .rotate1:hover{
+            transform:rotate(20deg);/*시계방향으로 20도 회전*/
+        }
+        .rotate2:hover{
+            transform: rotate(-40deg);/*반시계방향*/
+        }
+
+        .rotate3X{
+            transform:rotate3d(1,0,0, 45deg);
+        }
+        .rotate3Y{
+            transform:rotate3d(0,1,0, 45deg);
+        }
+        .rotate3Z{
+            transform:rotate3d(0,0,-1, 45deg);
+        }
+        .rotate3XYZ{
+            transform: rotate3d(2.5, 1.2, -1.5, 45deg);
+        }
+
+    </style>
+</head>
+
+<body>
+    <h2>변환 transform 트랜스폼: 위치</h2>
+    <p>
+        특정 요소의 크기나 형태가 변하는 것을 변형(변환) 또는 트랜스폼이라고 한다. 사용자의 동작에 반응해 텍스트나 이미지 등을 움직이게 할 수 있다.
+        2차원(x, y) / 3차원(x, y, z) : 원근감의 표현
+        z축 앞뒤로 이동하는데 가까워지고 멀어진다.
+    </p>
+    <section>
+        <div class="origin">
+            <div class="moveX"><img src="../ArtResource/joo/Emoji_joo05.png" width="100px" alt=""></div>
+        </div>
+        <div class="origin">
+            <div class="moveY"><img src="../ArtResource/joo/Emoji_joo05.png" width="100px" alt=""></div>
+        </div>
+        <div class="origin">
+            <div class="moveXY"><img src="../ArtResource/joo/Emoji_joo05.png" width="100px" alt=""></div>
+        </div>
+    </section>
+
+    <h2>변환 transform 트랜스폼: 스케일</h2>
+    <section>
+        <div class="originScale">
+            <div class="scaleX"><img src="../ArtResource/joo/Emoji_joo05.png" width="100px" alt=""></div>
+        </div>
+        <div class="originScale">
+            <div class="scaleY"><img src="../ArtResource/joo/Emoji_joo05.png" width="100px" alt=""></div>
+        </div>
+        <div class="originScale">
+            <div class="scaleXY"><img src="../ArtResource/joo/Emoji_joo05.png" width="100px" alt=""></div>
+        </div>
+    </section>
+
+    <h2>변환 transform 트랜스폼: 로테이트</h2>
+    <section>
+        <div class="originRotate">
+            <div class="rotate1"><img src="../ArtResource/joo/Emoji_joo05.png" width="100px" alt=""></div>
+        </div>
+        <div class="originRotate">
+            <div class="rotate2"><img src="../ArtResource/joo/Emoji_joo05.png" width="100px" alt=""></div>
+        </div>
+    </section>
+
+    <h2>변환 transform 트랜스폼: 3D 로테이트</h2>
+    <section>
+        <div class="origin3Rotate">
+            <div class="rotate3X"><img src="../ArtResource/joo/joo_photo.png" width="100px" alt=""></div>
+        </div>
+        <div class="origin3Rotate">
+            <div class="rotate3Y"><img src="../ArtResource/joo/joo_photo.png" width="100px" alt=""></div>
+        </div>
+        <div class="origin3Rotate">
+            <div class="rotate3Z"><img src="../ArtResource/joo/joo_photo.png" width="100px" alt=""></div>
+        </div>
+        <div class="origin3Rotate">
+            <div class="rotate3XYZ"><img src="../ArtResource/joo/joo_photo.png" width="100px" alt=""></div>
+        </div>
+    </section>
+
+
+</body>
+
+</html>

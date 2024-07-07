@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+
+
+<body>
+    <table border>
+        <caption>색깔의 종류</caption>
+        <thead>
+            </tr>
+                <th>종류</th> <th colspan="2" style="background-color: yellowgreen;">비비드</th> <th>파스텔</th> <th>어두운 계열</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td> <td>빨강</td> <td>분홍색</td> <td>검정</td>
+            </tr>ㅇ
+            <tr>
+                <td>2</td> <td>파랑</td> <td rowspan="2" style="background-color: red;">하늘색</td> <td>남색</td>
+            </tr>
+            <tr>
+                <td>3</td> <td>노랑</td> <td>연보라색</td> <td>회색</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>합계</td><td>3개</td><td>3개</td> <td>3개</td>
+            </tr>
+        </tfoot>
+
+    </table>
+    표의 끝
+
+    <table border="1">
+        <h3>상품구성</h3>
+        <caption>실속형과 고급형 상품 구성</caption>
+        <thead>
+            <tr>
+                <th>용도</th> <th>중량</th> <th>개수</th> <th>가격</th>
+            </tr>
+        </thead>
+       
+        <tbody>
+            <tr>
+                <td rowspan="2" style="background-color: blue;">실속형</td> <td>3kg</td> <td>11~16과</td> <td>17,000원</td>
+                
+                    
+                        
+            </tr>
+            <tr>
+                <td>3kg</td> <td>11~16과</td> <td>17,000원</td>
+            </tr>
+            <tr>
+                <td rowspan="2">실속형</td> <td>3kg</td> <td>11~16과</td> <td>17,000원</td>
+            </tr>
+            <tr>
+                <td>3kg</td> <td>11~16과</td> <td>17,000원</td>
+            </tr>
+        </tbody>
+
+    </table>
+
+    <br>
+    
+    <table border="1">
+        <caption>좋아하는 과일</caption>
+<tr>
+    <td><img src="images/MandarinOrange.webp", width="50"></td>
+    <td><img src="images/Apple.jpg", width="50"></td>
+    <td><img src="images/banana.webp", width="50"></td>
+</tr>
+
+    </table>
+
+
+    <!--
+        table 표 전체를 담는 컨테이너
+        caption 표 제목
+        thead   헤딩 셀 그룹
+        tfoot   바닥 셀 그룹
+        tbody   데이터 셀 그룹
+        tr 행, 여러개의 td, th 포함
+        th 제목(헤딩) 셀 : 두꺼운 글꼴
+        td 데이터 셀(칸))
+    -->
+
+<br>
+
+<table border="1">
+    <tr>
+        <th>이름</th> <td>Sangkil Joo</td> <th>연락처</th> <td>joosangkil@gmail.com</td>
+    </tr>
+    <tr>
+        <td>주소,전공,좋아하는것</td> <td colspan="3">경기파주시, 산업디자인, 3D모델링</td>
+    </tr>
+    <tr>
+        <td>공부하는 것</td> <td colspan="3">ㅏ</td>
+    </tr>
+</table>
+
+
+
+</body>
+</html>

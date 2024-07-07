@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+        }
+
+        img {
+            width: auto;
+            height: auto;
+        }
+
+
+        #card1_hover,
+        #card2_hover {
+            display: none;
+        }
+
+        #div1:hover #card1 {
+            display: none;
+        }
+
+        #div1:hover #card1_hover {
+            display: block;
+        }
+
+        #div2:hover #card2 {
+            display: none;
+        }
+
+        #div2:hover #card2_hover {
+            display: block;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <div id="div1">
+        <img id="card1" src="../20240703/images/trump_back.jpeg" alt="">
+        <img id="card1_hover" src="../20240703/images/trump_front.jpeg" alt="">
+    </div>
+
+    <div>
+        <img id="card1" src="../20240703/images/trump_back.jpeg" alt="">
+    </div>
+</body>
+
+</html>

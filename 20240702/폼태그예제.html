@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        fieldset{
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h3><mark>회원 정보 입력</mark></h3>
+    <form action="">
+        <fieldset>
+            <legend>로그인 정보</legend>
+            <label for="">아이디: <input type="text" title="아이디" size="30"></label><br>
+            <label for="">비밀번호: <input type="password"> <input type="submit" value="로그인"></label>
+        </fieldset>
+
+        <fieldset>
+            <legend>추가 정보</legend>
+            <label for="">메일주소: <input type="text"></label>
+            <br>
+            <label for="">메일수신: </label>
+            <input type="radio" id="yes" name="bIsReceived">메일 수신 동의</input>
+            <input type="radio" id="no" name="bIsReceived">메일 수신 거부</input>
+
+            <br>
+
+            <label for="">연락처: <input type="PhoneNumber" placeholder="하이폰을 빼고 입력해 주세요."></label><br>
+            <label for="">생년월일: <input type="PhoneNumber" placeholder="YYYY-MM-DD"></label><br>
+            <label for="">취미: </label>
+            <label for=""><input type="checkbox">독서</label>
+            <label for=""><input type="checkbox">음악감상</label>
+            <label for=""><input type="checkbox">운동</label>
+            <br>
+            <br>
+            <label for="path">가입경로: </label>
+            <select id="path">
+                <option value="">블로그</option>
+                <option value="">검색</option>
+                <option value="">SNS</option>
+                <option value="">지인추천</option>
+                <option value="">기타</option>
+            </select>
+            <br>
+            <br>
+
+            <label for="path">메모: </label>
+            <textarea name="" id="" cols="30" rows="10">자유롭게 의견을 남겨주세요</textarea>
+
+
+        </fieldset>
+    <input type="submit" value="Submit">
+    </form>
+
+<h3><mark>셀 합치기 연습</mark></h3>
+
+<table border="1">
+    <caption>요안도라 객실</caption>
+    <tr style="background-color: rgb(171, 171, 171);">
+        <th>방 이름</th><th>대상</th><th>크기</th><th>가격</th>
+    </tr>
+    <tr>
+        <th>유채방</th><td>여성 도미토리</td><td rowspan="3">4인실</td><td rowspan="4">1인 20,000원</td>
+    </tr>
+    <tr>
+        <th rowspan="2">동백방</th><td>동성 도미토리</td>
+    </tr>
+    <tr>
+        <td>가족 1팀</td>
+    </tr>
+    <tr>
+        <th>천혜향방</th><td>-</td><td>2인실</td>
+    </tr>
+    <tr style="background-color: rgb(171, 171, 171);">
+        <th colspan="4">바깥채 전체를 렌트합니다</th>
+    </tr>
+</table>
+
+
+
+</body>
+</html>

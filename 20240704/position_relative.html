@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position_relative</title>
+    <style>
+
+    </style>
+    <style>
+        divv {
+            width: 300px;
+            height: 200px;
+        }
+
+        .static {
+            background-color: red;
+            position: static;
+            /*기본값: 요소를 문서의 흐름에 맞추어 배치*/
+        }
+
+        .relative-1 {
+            background-color: green;
+            position: relative;
+            width: 300px;
+            height: 200px;
+        }
+
+        .relative-2 {
+            bacrkground-color: blue;
+            position: relative;
+            width: 300px;
+            height: 200px;
+            left: 100px;
+            top: -50px;
+        }
+
+        .fixed {
+            background-color: green;
+            width: 150px;
+            height: 150px;
+            position: fixed;
+            right: 50px;
+            top: 50px;
+
+            border: solid 10px;
+        }
+
+        .sticky {
+            position: sticky;
+            width: 80px;
+            height: 80px;
+            background-color: yellow;
+            top: 5px;
+            /*top이 있어야 함. top이 5픽셀일 때 고정*/
+        }
+
+        #float {
+            float: right;
+            border: 5px dotted red;
+            /*
+            width: 128px;
+            padding: 4px;
+            margin: 16px;x
+            */
+            width: 8em;
+            padding: 0.25em;
+            margin: 1em;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="static">박스1</div>
+    <div class="relative-1">박스2</div>
+    <div class="relative-2">박스3</div>
+    <div class="fixed">박스4
+        공지사항 스크롤 생겼을 때
+    </div>
+    <div class="sticky">박스5
+        탑 5px일 때고정
+    </div>
+
+
+
+    <pre id="float">
+        skfdkfj;lajf
+        as;lkfjs;dlfj
+        asd;lkfj
+    </pre>
+
+    <h3>학기말 공지</h3>
+    <hr>
+    <div>
+        <p id="float">
+            222쪽 내용 동해물과
+        </p>
+        <p>
+            백두산이 마르고 닳도록 하늘느느느느늘리리릴ㄹ아ㅓ;ㅓㅁㄴㄹ;겨울방학 ㄷㅇ.
+            그럼 다음학기
+            만나고롬
+        </p>
+    </div>
+</body>
+
+</html>
